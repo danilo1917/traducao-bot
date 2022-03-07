@@ -1,0 +1,1 @@
+worker python trad_bot.py
