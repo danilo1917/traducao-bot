@@ -2,7 +2,7 @@ import telebot
 import requests
 import json
 import base64
-CHAVE_API = "5117408298:AAEaU6BtnS0vApdp1-vTHFpfvCmg1Bias1I"
+CHAVE_API = "YOUR PYTELEGRAMBOTAPI KEY HERE"
 
 bot = telebot.TeleBot(CHAVE_API)
 
@@ -19,7 +19,7 @@ def traduz(mensagem , lingua_atual_id = 0 , lingua_destino_id = 1 ):
     "SL": linguas[lingua_atual_id - 1],
     "TL": linguas[lingua_destino_id - 1]
     })
-    userAndPass = base64.b64encode(b"2294-ZHlbHcfB:zyMmarlm6Hb4QziNfF6/xxcK7F52z7q/C5NyQXO8aeuF").decode("ascii")
+    userAndPass = base64.b64encode(b"YOUR GOTIT API USER AND PASS").decode("ascii")
     headers = {
     'Content-Type': 'application/json',
     'Authorization': f'Basic {userAndPass}'
